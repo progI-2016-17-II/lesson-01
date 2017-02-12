@@ -1,0 +1,100 @@
+---
+title: "1. Környezet beállítása és követelmények"
+subtitle: |
+  | Programozás I. 1. óra
+author: |
+  | Balogh Kitti
+  | kttblgh@gmail.com
+date: "2017-02-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Vázlat
+
+- [Környezet, projektek beállítása](#kornyezet-projektek-beallitasa)
+- [Jegyszerzés](#jegyszerzes)
+- [Ajánlott irodalmak](#ajanlott-irodalmak)
+- [Konzultáció](#konzultacio)
+
+## Környezet, projektek beállítása
+Próbáljunk egységes környezetet kialakítani, hogy
+
+- rendesen tudjunk kommunikálni egymással,
+- meg tudjuk egymással osztani a kódokat,
+- rendben tudjuk tartani a projekteket.
+
+### R
+- R verzió: [R version 3.3.2](https://www.r-project.org/) (2017-03-06 új verzió release)
+- R IDE: [RStudio](https://www.rstudio.com/products/rstudio/download/)
+- R kódírási stílus:
+    - Style guide-ok: <http://adv-r.had.co.nz/Style.html> és <https://cran.r-project.org/web/packages/rockchalk/vignettes/Rstyle.pdf>
+    - [formatR](https://yihui.name/formatr/) package
+- Egyéni beállítási lehetőségek: <https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio#general>
+
+### Projektstruktúra
+Ha elkezdünk egy projektet, így nézzen ki az alap projektstruktúránk:
+
+```
+project
+│   .gitignore
+│   project.Rproj
+│   README.md
+└───data
+└───doc
+└───fig
+└───src
+```
+Miért jó, ha van projektstruktúránk? <https://nicercode.github.io/blog/2013-04-05-projects/>
+
+A 'data' mappába mennek az adatfájlok, a 'doc' mappába a dokumentumok és riportok, a 'fig' mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy .gitignore fájl, amiről mindjárt beszélünk. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File-->New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!
+
+Könnyen megeshet, hogy további mappákat kell majd a későbbiekben létrehozni (pl. a teszteléshez egy 'test' vagy az előfeldolgozáshoz egy 'munge' mappát). Létezik egy [ProjectTemplate](http://projecttemplate.net/index.html) nevű package, ami automatikusan állít fel projektstruktúrát, lehet onnan inspirálódni, de ezt még nem használnánk ki.
+
+### Git
+A [git](https://git-scm.com/) verziókövető rendszer használata nem kötelező, de baromi hasznos és értékes tudás, szóval csak ajánlani tudom, hogy próbálja meg mindenki a házi feladatoknál használni. Aki így tesz, pluszpontot kap érte.
+
+Néhány előnye:
+
+- hozzáférsz a fájlok mentett verzióihoz, így nem vesznek el kódrészleteid, amiket már átírtál (pl. debugolásnál jön jól)
+- segít a projektek jobb rendben tartásában és szervezésében
+- több ember tud egy projekten dolgozni egymással párhuzamosan
+
+#### RStudio és git
+- RStudio-ban jól integrált a használata: <https://www.r-bloggers.com/rstudio-and-github/>
+
+#### Tutorialok
+- Kezdő, gyors tutorial: https://try.github.io/ 
+- Nehezebb, mélyebb, de gyors és mókás: http://learngitbranching.js.org/
+- Nehezebb, mélyebb, viszonylag lassú, de alapos: https://www.udacity.com/course/how-to-use-git-and-github--ud775
+
+#### Házifeladatok és git
+- létre lesz hozva egy [GitHub Classroom](https://classroom.github.com/) a házi feladatokhoz
+- aki vállalkozik rá, itt is beadhatja a háziját, ennek mikéntjéhez kapni fog hinteket
+- pluszpont jár érte és nincs semmi vesztenivaló
+
+## Jegyszerzés
+- Három kisebb házi feladat 10-10 pontért
+- Egy nagyobb házi feladat a kurzus végén 20 pontért
+- Ponthatárok és osztályzat:
+    - 45-50 pont: 5 
+    - 39-44 pont: 4
+    - 33-38 pont: 3
+    - 25-32 pont: 2
+    - 0-24 pont: 1
+- Pluszpontok:
+    - max. 2 hiányzás esetén 5 pluszpont
+    - git használatért
+
+## Ajánlott irodalmak
+Az irodalmak megtalálhatók coospace-en.
+
+- Crawley, M. J. (2013). The R Book. John Wiley & Sons. Second Edition.
+- Lander, J. P. (2014). R for Everyone: Advanced Analytics and Graphics. Addison-Wesley Data and Analytics Series. 1st Edition.
+- Matloff, N. (2011). The Art of R Programming. No Starch Press.
+
+## Konzultáció
+Alapvetően lehetőség van rá akár közvetlenül a gyakorlat után, online vagy egyéb időpont és helyszín is megbeszélhető. A konzultáció fakultatív. Aki szeretne konzultálni, legyen szíves, jelezze emailben vasárnap este 8-ig!
