@@ -1,0 +1,44 @@
+---
+title: "3. Feladatok"
+subtitle: |
+  | Programozás I. 1. óra
+author: |
+  | Balogh Kitti
+  | kttblgh@gmail.com
+date: "2017-02-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. feladat
+a) A "lesson01" projekt "src" mappájában nyiss egy új R szkriptet "Feladatok.R" néven!
+b) Figyelj arra, hogy folyamatosan kommenteld, amit csinálsz! Kommentet "#" beírása után tudsz tenni. Csinálj fejlécet is, amiben megadod a címet ("Feladatok"), a kurzus nevét, az óra sorszámát és a dátumot is!
+c) Installáld githubról ezt a package-et: https://github.com/tadaadata/loldata, majd hívd be!
+d) A package tartalmaz egy "got" nevű adatbázist, ezt rendeld hozzá egy "got" nevű változóhoz!
+e) A létrehozott "got" változót többféleképp is meg tudod nézni:
+    - csak simán beírod a változó nevét
+    - áttekinthetőbben a "View" függvény segítségével tudod megnyitni (használj helpet a függvény dokumentációjának eléréséhez)
+    - jobb oldalon fenn az Environment/Data ablakban tudsz rákattintani a változónál a táblázat ikonra, ami ugyanazt csinálja, mint a "View"
+f) Az adatbázisban találsz egy "rating" nevű oszlopot. Nézd meg az oszlop adattípusát!
+g) Határozd meg a minimum, maximum és átlagos értékét a "rating" oszlopnak!
+h) Listázd ki az első évad adatait!
+i) Listázd ki minden évad 1. epizódjának címét!
+j) Kérd le, hogy milyen típusú adat a "first_aired"!
+k) Tedd át a "first_aired" változót "Date" típusúba!
+l) Nézd meg az első és hatodik évad átlagos értékelését a "rating" oszlop segítségével, és hogy eszerint az első évadot jobbra értékelték-e!
+m) Nézd meg az "overview" oszlop adattípusát!
+n) Nézd meg az "overview" oszlop elemeinek hosszát!
+o) Találd meg a leghosszabb elemet az "overview" oszlopból és hogy melyik évad, melyik epizódjához tartozik!
+p) Futtasd le menüből a Code-->Reformat code opciót a megírt kódrészletre!
+
+## 2. feladat
+a) Továbbra is figyelj, hogy szépen kommentelj mindent!
+b) A loldata package tartalmaz egy "worldrankings" nevű adatbázist, ezt rendeld hozzá egy "rankdata" nevű változóhoz!
+c) Nézd meg, hogy melyik ország diszkriminációs adatai hiányoznak!
+d) Nézd meg, hogy Magyarország diszkriminációs adata hiányzik-e! Használhatod például az %in% operátort, aminek nézz utána.
+e) Nézd meg, hogy mennyi Magyarország diszkriminációs indexe!
+f) Nézd meg, hogy Magyarország hányadik az országok között a diszkriminációs indexét tekintve!
+g) Futtasd le menüből a Code-->Reformat code opciót a megírt kódrészletre!

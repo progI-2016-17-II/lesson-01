@@ -116,8 +116,8 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><ol style="list-style-type: decimal">
-<li>Környezet beállítása és követelmények</li>
+<h1 class="title toc-ignore"><ol start="3" style="list-style-type: decimal">
+<li>Feladatok</li>
 </ol></h1>
 <h3 class="subtitle"><em><p>Programozás I. 1. óra</p></em></h3>
 <h4 class="author"><em><p>Balogh Kitti<br />
@@ -127,116 +127,43 @@ $(document).ready(function () {
 </div>
 
 
-<div id="vazlat" class="section level2">
-<h2>Vázlat</h2>
+<div id="feladat" class="section level2">
+<h2>1. feladat</h2>
+<ol style="list-style-type: lower-alpha">
+<li>A “lesson01” projekt “src” mappájában nyiss egy új R szkriptet “Feladatok.R” néven!</li>
+<li>Figyelj arra, hogy folyamatosan kommenteld, amit csinálsz! Kommentet “#” beírása után tudsz tenni. Csinálj fejlécet is, amiben megadod a címet (“Feladatok”), a kurzus nevét, az óra sorszámát és a dátumot is!</li>
+<li>Installáld githubról ezt a package-et: <a href="https://github.com/tadaadata/loldata" class="uri">https://github.com/tadaadata/loldata</a>, majd hívd be!</li>
+<li>A package tartalmaz egy “got” nevű adatbázist, ezt rendeld hozzá egy “got” nevű változóhoz!</li>
+<li>A létrehozott “got” változót többféleképp is meg tudod nézni:
 <ul>
-<li><a href="#kornyezet-projektek-beallitasa">Környezet, projektek beállítása</a></li>
-<li><a href="#jegyszerzes">Jegyszerzés</a></li>
-<li><a href="#ajanlott-irodalmak">Ajánlott irodalmak</a></li>
-<li><a href="#konzultacio">Konzultáció</a></li>
-</ul>
-</div>
-<div id="kornyezet-projektek-beallitasa" class="section level2">
-<h2>Környezet, projektek beállítása</h2>
-<p>Próbáljunk egységes környezetet kialakítani, hogy</p>
-<ul>
-<li>rendesen tudjunk kommunikálni egymással,</li>
-<li>meg tudjuk egymással osztani a kódokat,</li>
-<li>rendben tudjuk tartani a projekteket.</li>
-</ul>
-<div id="r" class="section level3">
-<h3>R</h3>
-<ul>
-<li>R verzió: <a href="https://www.r-project.org/">R version 3.3.2</a> (2017-03-06 új verzió release)</li>
-<li>R IDE: <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
-<li>R kódírási stílus:
-<ul>
-<li>Style guide-ok: <a href="http://adv-r.had.co.nz/Style.html" class="uri">http://adv-r.had.co.nz/Style.html</a> és <a href="https://cran.r-project.org/web/packages/rockchalk/vignettes/Rstyle.pdf" class="uri">https://cran.r-project.org/web/packages/rockchalk/vignettes/Rstyle.pdf</a></li>
-<li><a href="https://yihui.name/formatr/">formatR</a> package</li>
+<li>csak simán beírod a változó nevét</li>
+<li>áttekinthetőbben a “View” függvény segítségével tudod megnyitni (használj helpet a függvény dokumentációjának eléréséhez)</li>
+<li>jobb oldalon fenn az Environment/Data ablakban tudsz rákattintani a változónál a táblázat ikonra, ami ugyanazt csinálja, mint a “View”</li>
 </ul></li>
-<li>Egyéni beállítási lehetőségek: <a href="https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio#general" class="uri">https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio#general</a></li>
-</ul>
+<li>Az adatbázisban találsz egy “rating” nevű oszlopot. Nézd meg az oszlop adattípusát!</li>
+<li>Határozd meg a minimum, maximum és átlagos értékét a “rating” oszlopnak!</li>
+<li>Listázd ki az első évad adatait!</li>
+<li>Listázd ki minden évad 1. epizódjának címét!</li>
+<li>Kérd le, hogy milyen típusú adat a “first_aired”!</li>
+<li>Tedd át a “first_aired” változót “Date” típusúba!</li>
+<li>Nézd meg az első és hatodik évad átlagos értékelését a “rating” oszlop segítségével, és hogy eszerint az első évadot jobbra értékelték-e!</li>
+<li>Nézd meg az “overview” oszlop adattípusát!</li>
+<li>Nézd meg az “overview” oszlop elemeinek hosszát!</li>
+<li>Találd meg a leghosszabb elemet az “overview” oszlopból és hogy melyik évad, melyik epizódjához tartozik!</li>
+<li>Futtasd le menüből a Code–&gt;Reformat code opciót a megírt kódrészletre!</li>
+</ol>
 </div>
-<div id="projektstruktura" class="section level3">
-<h3>Projektstruktúra</h3>
-<p>Ha elkezdünk egy projektet, így nézzen ki az alap projektstruktúránk:</p>
-<pre><code>project
-│   .gitignore
-│   project.Rproj
-│   README.md
-└───data
-└───doc
-└───fig
-└───src</code></pre>
-<p>Miért jó, ha van projektstruktúránk? <a href="https://nicercode.github.io/blog/2013-04-05-projects/" class="uri">https://nicercode.github.io/blog/2013-04-05-projects/</a></p>
-<p>A ‘data’ mappába mennek az adatfájlok, a ‘doc’ mappába a dokumentumok és riportok, a ‘fig’ mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy <a href="https://github.com/github/gitignore/blob/master/README.md">.gitignore fájl</a>, ha gitezel. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File–&gt;New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!</p>
-<p>Könnyen megeshet, hogy további mappákat kell majd a későbbiekben létrehozni (pl. a teszteléshez egy ‘test’ vagy az előfeldolgozáshoz egy ‘munge’ mappát). Létezik egy <a href="http://projecttemplate.net/index.html">ProjectTemplate</a> nevű package, ami automatikusan állít fel projektstruktúrát, lehet onnan inspirálódni, de ezt még nem használnánk ki.</p>
-</div>
-<div id="git" class="section level3">
-<h3>Git</h3>
-<p>A <a href="https://git-scm.com/">git</a> verziókövető rendszer használata nem kötelező, de baromi hasznos és értékes tudás, szóval csak ajánlani tudom, hogy próbálja meg mindenki a házi feladatoknál használni. Aki így tesz, pluszpontot kap érte.</p>
-<p>Néhány előnye:</p>
-<ul>
-<li>hozzáférsz a fájlok mentett verzióihoz, így nem vesznek el kódrészleteid, amiket már átírtál (pl. debugolásnál jön jól)</li>
-<li>segít a projektek jobb rendben tartásában és szervezésében</li>
-<li>több ember tud egy projekten dolgozni egymással párhuzamosan</li>
-</ul>
-<div id="rstudio-es-git" class="section level4">
-<h4>RStudio és git</h4>
-<ul>
-<li>RStudio-ban jól integrált a használata: <a href="https://www.r-bloggers.com/rstudio-and-github/" class="uri">https://www.r-bloggers.com/rstudio-and-github/</a></li>
-</ul>
-</div>
-<div id="tutorialok" class="section level4">
-<h4>Tutorialok</h4>
-<ul>
-<li>Kezdő, gyors tutorial: <a href="https://try.github.io/" class="uri">https://try.github.io/</a></li>
-<li>Nehezebb, mélyebb, de gyors és mókás: <a href="http://learngitbranching.js.org/" class="uri">http://learngitbranching.js.org/</a></li>
-<li>Nehezebb, mélyebb, viszonylag lassú, de alapos: <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" class="uri">https://www.udacity.com/course/how-to-use-git-and-github--ud775</a></li>
-</ul>
-</div>
-<div id="hazifeladatok-es-git" class="section level4">
-<h4>Házifeladatok és git</h4>
-<ul>
-<li>létre lesz hozva egy <a href="https://classroom.github.com/">GitHub Classroom</a> a házi feladatokhoz</li>
-<li>aki vállalkozik rá, itt is beadhatja a háziját, ennek mikéntjéhez kapni fog hinteket</li>
-<li>pluszpont jár érte és nincs semmi vesztenivaló</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="jegyszerzes" class="section level2">
-<h2>Jegyszerzés</h2>
-<ul>
-<li>Három kisebb házi feladat 10-10 pontért</li>
-<li>Egy nagyobb házi feladat a kurzus végén 20 pontért</li>
-<li>Ponthatárok és osztályzat:
-<ul>
-<li>45-50 pont: 5</li>
-<li>39-44 pont: 4</li>
-<li>33-38 pont: 3</li>
-<li>25-32 pont: 2</li>
-<li>0-24 pont: 1</li>
-</ul></li>
-<li>Pluszpontok:
-<ul>
-<li>max. 2 hiányzás esetén 5 pluszpont</li>
-<li>git használatért</li>
-</ul></li>
-</ul>
-</div>
-<div id="ajanlott-irodalmak" class="section level2">
-<h2>Ajánlott irodalmak</h2>
-<p>Az irodalmak megtalálhatók coospace-en.</p>
-<ul>
-<li>Crawley, M. J. (2013). The R Book. John Wiley &amp; Sons. Second Edition.</li>
-<li>Lander, J. P. (2014). R for Everyone: Advanced Analytics and Graphics. Addison-Wesley Data and Analytics Series. 1st Edition.</li>
-<li>Matloff, N. (2011). The Art of R Programming. No Starch Press.</li>
-</ul>
-</div>
-<div id="konzultacio" class="section level2">
-<h2>Konzultáció</h2>
-<p>Alapvetően lehetőség van rá akár közvetlenül a gyakorlat után, online vagy egyéb időpont és helyszín is megbeszélhető. A konzultáció fakultatív. Aki szeretne konzultálni, legyen szíves, jelezze emailben vasárnap este 8-ig!</p>
+<div id="feladat-1" class="section level2">
+<h2>2. feladat</h2>
+<ol style="list-style-type: lower-alpha">
+<li>Továbbra is figyelj, hogy szépen kommentelj mindent!</li>
+<li>A loldata package tartalmaz egy “worldrankings” nevű adatbázist, ezt rendeld hozzá egy “rankdata” nevű változóhoz!</li>
+<li>Nézd meg, hogy melyik ország diszkriminációs adatai hiányoznak!</li>
+<li>Nézd meg, hogy Magyarország diszkriminációs adata hiányzik-e! Használhatod például az %in% operátort, aminek nézz utána.</li>
+<li>Nézd meg, hogy mennyi Magyarország diszkriminációs indexe!</li>
+<li>Nézd meg, hogy Magyarország hányadik az országok között a diszkriminációs indexét tekintve!</li>
+<li>Futtasd le menüből a Code–&gt;Reformat code opciót a megírt kódrészletre!</li>
+</ol>
 </div>
 
 

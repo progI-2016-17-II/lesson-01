@@ -50,7 +50,7 @@ project
 ```
 Miért jó, ha van projektstruktúránk? <https://nicercode.github.io/blog/2013-04-05-projects/>
 
-A 'data' mappába mennek az adatfájlok, a 'doc' mappába a dokumentumok és riportok, a 'fig' mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy .gitignore fájl, amiről mindjárt beszélünk. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File-->New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!
+A 'data' mappába mennek az adatfájlok, a 'doc' mappába a dokumentumok és riportok, a 'fig' mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy [.gitignore fájl](https://github.com/github/gitignore/blob/master/README.md), ha gitezel. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File-->New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!
 
 Könnyen megeshet, hogy további mappákat kell majd a későbbiekben létrehozni (pl. a teszteléshez egy 'test' vagy az előfeldolgozáshoz egy 'munge' mappát). Létezik egy [ProjectTemplate](http://projecttemplate.net/index.html) nevű package, ami automatikusan állít fel projektstruktúrát, lehet onnan inspirálódni, de ezt még nem használnánk ki.
 

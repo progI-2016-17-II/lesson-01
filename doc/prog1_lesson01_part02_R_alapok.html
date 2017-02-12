@@ -545,6 +545,7 @@ which(m1 &gt; 10)</code></pre>
 <pre><code>## [1] 54</code></pre>
 <pre class="r"><code># dokumentáció elérése
 ?mean
+help(mean)
 # keresés leírásokban, kilistázza a package-ekre
 ??mean
 # a jelentés alapján keresünk
@@ -752,10 +753,18 @@ l2[[1]]</code></pre>
 <pre class="r"><code>l2[[1]]$Állatok</code></pre>
 <pre><code>## [1] axolotl   kék bálna tintahal 
 ## Levels: axolotl kék bálna tintahal</code></pre>
-<pre class="r"><code>l2[[4]] &lt;- 2
+<pre class="r"><code># új elem hozzáadása
+l2[[4]] &lt;- 2
 l2[[&quot;new_element&quot;]] &lt;- 5:10
 names(l2)</code></pre>
 <pre><code>## [1] &quot;data_frame&quot;  &quot;vector&quot;      &quot;list&quot;        &quot;&quot;            &quot;new_element&quot;</code></pre>
+<div id="irodalom-7" class="section level4">
+<h4>Irodalom:</h4>
+<ul>
+<li>Lander 5.2</li>
+<li>Matloff 6.1</li>
+</ul>
+</div>
 </div>
 </div>
 <div id="hianyos-adat" class="section level2">
@@ -792,7 +801,7 @@ is.null(y)</code></pre>
 <pre class="r"><code>is.null(7)</code></pre>
 <pre><code>## [1] FALSE</code></pre>
 </div>
-<div id="irodalom-7" class="section level3">
+<div id="irodalom-8" class="section level3">
 <h3>Irodalom:</h3>
 <ul>
 <li>Lander 4.7</li>

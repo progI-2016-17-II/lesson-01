@@ -314,6 +314,7 @@ mean(v5)
 
 # dokumentáció elérése
 ?mean
+help(mean)
 # keresés leírásokban, kilistázza a package-ekre
 ??mean
 # a jelentés alapján keresünk
