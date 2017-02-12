@@ -307,6 +307,7 @@ m1[, which(m1 > 10)]
 - már láttunk pár függvényt pl. length, ncar, rep, seq, as.factor, factor
 - a függvények teszik könnyen ismételhetővé a kódokat
 - a bonyolultabb függvények több argumentumból állnak
+- az argumentumoknak lehet default értéke is
 - a függvények dokumentációját könnyű elérni
 
 ```{r echo = TRUE}
