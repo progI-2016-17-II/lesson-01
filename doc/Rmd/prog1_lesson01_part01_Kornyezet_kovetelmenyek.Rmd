@@ -28,12 +28,12 @@ Próbáljunk egységes környezetet kialakítani, hogy
 - rendben tudjuk tartani a projekteket.
 
 ### R
-- R verzió: [R version 3.3.2](https://www.r-project.org/) (2017-03-06 új verzió release)
-- R IDE: [RStudio](https://www.rstudio.com/products/rstudio/download/)
+- R verzió: [R version 3.3.2](https://www.r-project.org/){target="_blank"} (2017-03-06 új verzió release)
+- R IDE: [RStudio](https://www.rstudio.com/products/rstudio/download/){target="_blank"}
 - R kódírási stílus:
-    - Style guide-ok: <http://adv-r.had.co.nz/Style.html> és <https://cran.r-project.org/web/packages/rockchalk/vignettes/Rstyle.pdf>
-    - [formatR](https://yihui.name/formatr/) package
-- Egyéni beállítási lehetőségek: <https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio#general>
+    - Style guide-ok: [Style guide 1](http://adv-r.had.co.nz/Style.html){target="_blank"}, [Style guide 2](https://cran.r-project.org/web/packages/rockchalk/vignettes/Rstyle.pdf){target="_blank"}
+    - [formatR](https://yihui.name/formatr/){target="_blank"} package
+- [Egyéni beállítási lehetőségek](https://support.rstudio.com/hc/en-us/articles/200549016-Customizing-RStudio#general){target="_blank"}
 
 ### Projektstruktúra
 Ha elkezdünk egy projektet, így nézzen ki az alap projektstruktúránk:
@@ -48,14 +48,14 @@ project
 └───fig
 └───src
 ```
-Miért jó, ha van projektstruktúránk? <https://nicercode.github.io/blog/2013-04-05-projects/>
+[Miért jó, ha van projektstruktúránk?](https://nicercode.github.io/blog/2013-04-05-projects/){target="_blank"}
 
-A 'data' mappába mennek az adatfájlok, a 'doc' mappába a dokumentumok és riportok, a 'fig' mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy [.gitignore fájl](https://github.com/github/gitignore/blob/master/README.md), ha gitezel. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File-->New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!
+A 'data' mappába mennek az adatfájlok, a 'doc' mappába a dokumentumok és riportok, a 'fig' mappába az R-ből kimentett plotok, az src-be a szkriptek. A főmappában lesz az R projekt fájl, egy README.md a projektleírással és egy [.gitignore fájl](https://github.com/github/gitignore/blob/master/README.md){target="_blank"}, ha gitezel. R projekt fájlt úgy csinálunk, hogy RStudio-ban rámegyünk, hogy File-->New Project. Ha új projektet kezdünk, mindig először projektet csináljunk, mielőtt bármilyen szkriptet elkezdenénk írni!
 
-Könnyen megeshet, hogy további mappákat kell majd a későbbiekben létrehozni (pl. a teszteléshez egy 'test' vagy az előfeldolgozáshoz egy 'munge' mappát). Létezik egy [ProjectTemplate](http://projecttemplate.net/index.html) nevű package, ami automatikusan állít fel projektstruktúrát, lehet onnan inspirálódni, de ezt még nem használnánk ki.
+Könnyen megeshet, hogy további mappákat kell majd a későbbiekben létrehozni (pl. a teszteléshez egy 'test' vagy az előfeldolgozáshoz egy 'munge' mappát). Létezik egy [ProjectTemplate](http://projecttemplate.net/index.html){target="_blank"} nevű package, ami automatikusan állít fel projektstruktúrát, lehet onnan inspirálódni, de ezt még nem használnánk ki.
 
 ### Git
-A [git](https://git-scm.com/) verziókövető rendszer használata nem kötelező, de baromi hasznos és értékes tudás, szóval csak ajánlani tudom, hogy próbálja meg mindenki a házi feladatoknál használni. Aki így tesz, pluszpontot kap érte.
+A [git](https://git-scm.com/){target="_blank"} verziókövető rendszer használata nem kötelező, de baromi hasznos és értékes tudás, szóval csak ajánlani tudom, hogy próbálja meg mindenki a házi feladatoknál használni. Aki így tesz, pluszpontot kap érte.
 
 Néhány előnye:
 
@@ -64,15 +64,15 @@ Néhány előnye:
 - több ember tud egy projekten dolgozni egymással párhuzamosan
 
 #### RStudio és git
-- RStudio-ban jól integrált a használata: <https://www.r-bloggers.com/rstudio-and-github/>
+- [RStudio-ban jól integrált a használata](https://www.r-bloggers.com/rstudio-and-github/){target="_blank"}
 
 #### Tutorialok
-- Kezdő, gyors tutorial: https://try.github.io/ 
-- Nehezebb, mélyebb, de gyors és mókás: http://learngitbranching.js.org/
-- Nehezebb, mélyebb, viszonylag lassú, de alapos: https://www.udacity.com/course/how-to-use-git-and-github--ud775
+- [Kezdő, gyors tutorial](https://try.github.io/){target="_blank"} 
+- [Nehezebb, mélyebb, de gyors és mókás](http://learngitbranching.js.org/){target="_blank"}
+- [Nehezebb, mélyebb, viszonylag lassú, de alapos](https://www.udacity.com/course/how-to-use-git-and-github--ud775){target="_blank"}
 
 #### Házifeladatok és git
-- létre lesz hozva egy [GitHub Classroom](https://classroom.github.com/) a házi feladatokhoz
+- létre lesz hozva egy [GitHub Classroom](https://classroom.github.com/){target="_blank"} a házi feladatokhoz
 - aki vállalkozik rá, itt is beadhatja a háziját, ennek mikéntjéhez kapni fog hinteket
 - pluszpont jár érte és nincs semmi vesztenivaló
 
