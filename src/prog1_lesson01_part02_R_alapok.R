@@ -1,10 +1,10 @@
-# -------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # 2. R alapok
 # Programozás I.
 # 1. óra
 # 2017-02-14
 
-## ----Package installálás, behívás-----------------------------------------
+## ----Package installálás, behívás---------------------------------------------
 
 # Package-ek installálása
 install.packages("ggplot2")
@@ -16,7 +16,7 @@ require(ggplot2)
 library(ggplot2)
 require(ggplot2, quietly = TRUE)
 
-## ----Változók-------------------------------------------------------------
+## ----Változók-----------------------------------------------------------------
 # Érték hozzárendelése változóhoz
 x <- 5
 x
@@ -35,7 +35,7 @@ print(paste0("y = ", as.character(y), " and Y = ", as.character(Y)))
 rm(Y)
 print(paste0("y = ", as.character(y), " and Y = ", as.character(Y)))
 
-## ----Adattípusok---------------------------------------------------------
+## ----Adattípusok--------------------------------------------------------------
 class(x)
 
 # Numerikus típusú adatok
@@ -72,7 +72,7 @@ a * 5
 "valami" == "semmi"
 "valami" > "semmi"
 
-## ----Adatstruktúrák I.----------------------------------------------------
+## ----Adatstruktúrák I.--------------------------------------------------------
 ### Vektorok
 ## Vektorok definiálása
 # a vektorok állhatnak numerikus, logikai, karakter, faktor stb. elemekből
@@ -134,11 +134,22 @@ v2_factor <- as.factor(v2)
 v2_factor
 
 # ordinális skála
-isk <- factor(x = c("Legfeljebb 8 általános", "Szakközép, szakiskola", 
-                    "Gimnázium, középiskola érettségivel", "Főiskola, egyetem"), 
-              levels = c("Legfeljebb 8 általános", "Szakközép, szakiskola", 
-                         "Gimnázium, középiskola érettségivel", "Főiskola, egyetem"),
-              ordered = TRUE)
+isk <-
+  factor(
+    x = c(
+      "Legfeljebb 8 általános",
+      "Szakközép, szakiskola",
+      "Gimnázium, középiskola érettségivel",
+      "Főiskola, egyetem"
+    ),
+    levels = c(
+      "Legfeljebb 8 általános",
+      "Szakközép, szakiskola",
+      "Gimnázium, középiskola érettségivel",
+      "Főiskola, egyetem"
+    ),
+    ordered = TRUE
+  )
 isk
 
 ### Mátrixok
@@ -187,7 +198,7 @@ m1[m1[1, ] %% 2 == 1, ]
 which(m1 > 10)
 m1[, which(m1 > 10)]
 
-## ----Függvények---------------------------------------------------------
+## ----Függvények---------------------------------------------------------------
 mean(v5)
 
 # dokumentáció elérése
@@ -198,7 +209,7 @@ help(mean)
 # a jelentés alapján keresünk
 apropos("mea")
 
-## ----Adatstruktúrák II.-------------------------------------------------
+## ----Adatstruktúrák II.-------------------------------------------------------
 ### Data frame-ek
 ## Data frame definiálása
 x <- 3:1
@@ -283,7 +294,7 @@ l2[[4]] <- 2
 l2[["new_element"]] <- 5:10
 names(l2)
 
-## ----Hiányos adat--------------------------------------------------------
+## ----Hiányos adat-------------------------------------------------------------
 ## NA
 z <- c(1, 2, NA, 8, 3, NA, 3)
 z

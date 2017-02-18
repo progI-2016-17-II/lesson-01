@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 a) A "lesson01" projekt "src" mappájában nyiss egy új R szkriptet "Feladatok.R" néven!
 b) Figyelj arra, hogy folyamatosan kommenteld, amit csinálsz! Kommentet "#" beírása után tudsz tenni. Csinálj fejlécet is, amiben megadod a címet ("Feladatok"), a kurzus nevét, az óra sorszámát és a dátumot is!
 c) Installáld githubról ezt a package-et: https://github.com/tadaadata/loldata, majd hívd be!
-d) A package tartalmaz egy "got" nevű adatbázist, ezt rendeld hozzá egy "got" nevű változóhoz!
+d) A package tartalmaz egy "gameofthrones" nevű adatbázist, ezt rendeld hozzá egy "got" nevű változóhoz!
 e) A létrehozott "got" változót többféleképp is meg tudod nézni:
     - csak simán beírod a változó nevét
     - áttekinthetőbben a "View" függvény segítségével tudod megnyitni (használj helpet a függvény dokumentációjának eléréséhez)
